@@ -1,0 +1,26 @@
+@mixin wh($wh-w: false, $wh-h:false) {
+    width: $wh-w;
+    height: $wh-h;
+}
+
+@mixin loopfor($class,$i,$istart){
+	@for $i from $istart through $i{
+		#{$class}#{$i}{
+			// @include transform-origin(bottom);
+			@extend #page1;
+		}
+	}
+}
+
+@mixin eachaa(){
+	@each $member in a, b, c, d {
+ .#{$member} {
+ background-image: url("/image/#{$member}.jpg");
+}
+}
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+}

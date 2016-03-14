@@ -90,3 +90,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   position: absolute;
 }
+
+#page1, #page2, #page3, #page4, #page5, #page6 {
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -moz-transition: linear 1s;
+  -o-transition: linear 1s;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+
+#page2, #page3, #page4, #page5, #page6 {
+  -moz-transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+#op {
+  text-align: center;
+  margin: 40px auto;
+}
